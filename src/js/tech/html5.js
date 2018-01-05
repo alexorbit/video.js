@@ -189,6 +189,8 @@ class Html5 extends Tech {
       srcDescriptor.enumerable = true;
     }
 
+    console.log(srcDescriptor);
+
     Object.defineProperty(el, 'src', {
       get: srcDescriptor.get.bind(el),
       set: (v) => {
